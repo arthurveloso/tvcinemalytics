@@ -13,6 +13,8 @@
 		675E62421E37D2B5003DA01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675E62401E37D2B5003DA01E /* Main.storyboard */; };
 		675E62441E37D2B5003DA01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675E62431E37D2B5003DA01E /* Assets.xcassets */; };
 		675E626A1E37D77D003DA01E /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E62691E37D77D003DA01E /* Movies.swift */; };
+		67FA47441E39168300AB20EC /* WeekMoviesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA47431E39168300AB20EC /* WeekMoviesCell.swift */; };
+		67FA47471E39183C00AB20EC /* UIImageView+downloadImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA47461E39183C00AB20EC /* UIImageView+downloadImageURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		675E62431E37D2B5003DA01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675E62451E37D2B5003DA01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		675E62691E37D77D003DA01E /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		67FA47431E39168300AB20EC /* WeekMoviesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekMoviesCell.swift; sourceTree = "<group>"; };
+		67FA47461E39183C00AB20EC /* UIImageView+downloadImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+downloadImageURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		675E62391E37D2B5003DA01E /* Cinemalytics */ = {
 			isa = PBXGroup;
 			children = (
+				67FA47451E39182000AB20EC /* Extensions */,
 				675E623A1E37D2B5003DA01E /* AppDelegate.swift */,
 				675E623C1E37D2B5003DA01E /* FirstViewController.swift */,
 				675E623E1E37D2B5003DA01E /* SecondViewController.swift */,
@@ -63,8 +68,17 @@
 				675E62431E37D2B5003DA01E /* Assets.xcassets */,
 				675E62451E37D2B5003DA01E /* Info.plist */,
 				675E62691E37D77D003DA01E /* Movies.swift */,
+				67FA47431E39168300AB20EC /* WeekMoviesCell.swift */,
 			);
 			path = Cinemalytics;
+			sourceTree = "<group>";
+		};
+		67FA47451E39182000AB20EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67FA47461E39183C00AB20EC /* UIImageView+downloadImageURL.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				675E623F1E37D2B5003DA01E /* SecondViewController.swift in Sources */,
+				67FA47441E39168300AB20EC /* WeekMoviesCell.swift in Sources */,
+				67FA47471E39183C00AB20EC /* UIImageView+downloadImageURL.swift in Sources */,
 				675E623B1E37D2B5003DA01E /* AppDelegate.swift in Sources */,
 				675E626A1E37D77D003DA01E /* Movies.swift in Sources */,
 				675E623D1E37D2B5003DA01E /* FirstViewController.swift in Sources */,
