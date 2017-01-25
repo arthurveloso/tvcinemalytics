@@ -9,11 +9,8 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    
-    var moviesReleasedByYear: [Movies] = []
+
     var moviesReleasedThisWeek: [Movies] = []
-    var moviesReleasedNextWeek: [Movies] = []
-    var moviesUpcoming: [Movies] = []
     
     @IBOutlet weak var imageBackground: UIImageView!
     @IBOutlet weak var movieName: UILabel!
@@ -31,26 +28,16 @@ class FirstViewController: UIViewController {
         //print(moviesUpcoming[1].title!)
         //getMoviesByYear(year: 2014)
     }
-
-//    func getMoviesByYear(year: Int) {
-//        if let url = NSURL(string: "http://api.cinemalytics.in/v2/movie/year/\(year)/?auth_token=BD78E4BD510D84E92ED8077BEE08D5D2") {
-//            if let data = NSData(contentsOf: url as URL) {
-//                do {
-//                    let parsed = try JSONSerialization.jsonObject(with: data as Data, options: JSONSerialization.ReadingOptions.allowFragments)
-//                    
-//                    if let dictionary = parsed as? [[String : Any]] {
-//                        movies = Movies.modelsFromDictionaryArray(array: dictionary as NSArray)
-//                    }
-//                } catch let error as NSError {
-//                    print("Error parsing JSON \(error)")
-//                }
-//            }
-//        }
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setupTitle(movie: Movies) {
+        self.movieName.text = movie.title
+        self.movieGenre.text = movie.genre
+        self.imageBackground.downloadedFrom(link: movie.posterPath!)
     }
 }
 
@@ -71,8 +58,8 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.movieImage.adjustsImageWhenAncestorFocused = true
         
         cell.movieImage.downloadedFrom(link: moviesReleasedThisWeek[indexPath.item].posterPath!)
-        self.movieName.text = moviesReleasedThisWeek[indexPath.item].title!
-        self.movieGenre.text = moviesReleasedThisWeek[indexPath.item].genre!
+        cell.movie = moviesReleasedThisWeek[indexPath.item]
+        cell.controller = self
         
         return cell
     }

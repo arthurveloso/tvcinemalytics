@@ -15,6 +15,8 @@
 		675E626A1E37D77D003DA01E /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E62691E37D77D003DA01E /* Movies.swift */; };
 		67FA47441E39168300AB20EC /* WeekMoviesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA47431E39168300AB20EC /* WeekMoviesCell.swift */; };
 		67FA47471E39183C00AB20EC /* UIImageView+downloadImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA47461E39183C00AB20EC /* UIImageView+downloadImageURL.swift */; };
+		67FA47491E39356D00AB20EC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA47481E39356D00AB20EC /* ThirdViewController.swift */; };
+		67FA474D1E394A9A00AB20EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FA474C1E394A9A00AB20EC /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		675E62691E37D77D003DA01E /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		67FA47431E39168300AB20EC /* WeekMoviesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekMoviesCell.swift; sourceTree = "<group>"; };
 		67FA47461E39183C00AB20EC /* UIImageView+downloadImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+downloadImageURL.swift"; sourceTree = "<group>"; };
+		67FA47481E39356D00AB20EC /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		67FA474C1E394A9A00AB20EC /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				675E623A1E37D2B5003DA01E /* AppDelegate.swift */,
 				675E623C1E37D2B5003DA01E /* FirstViewController.swift */,
 				675E623E1E37D2B5003DA01E /* SecondViewController.swift */,
+				67FA47481E39356D00AB20EC /* ThirdViewController.swift */,
+				67FA474C1E394A9A00AB20EC /* SearchViewController.swift */,
 				675E62401E37D2B5003DA01E /* Main.storyboard */,
 				675E62431E37D2B5003DA01E /* Assets.xcassets */,
 				675E62451E37D2B5003DA01E /* Info.plist */,
@@ -155,7 +161,9 @@
 			files = (
 				675E623F1E37D2B5003DA01E /* SecondViewController.swift in Sources */,
 				67FA47441E39168300AB20EC /* WeekMoviesCell.swift in Sources */,
+				67FA474D1E394A9A00AB20EC /* SearchViewController.swift in Sources */,
 				67FA47471E39183C00AB20EC /* UIImageView+downloadImageURL.swift in Sources */,
+				67FA47491E39356D00AB20EC /* ThirdViewController.swift in Sources */,
 				675E623B1E37D2B5003DA01E /* AppDelegate.swift in Sources */,
 				675E626A1E37D77D003DA01E /* Movies.swift in Sources */,
 				675E623D1E37D2B5003DA01E /* FirstViewController.swift in Sources */,
